@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout02"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/pos_time"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="25"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/nom_time"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Piratininga"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_time"
+        android:layout_height="30dp"
+        android:src="@drawable/nope"
+        android:layout_width="wrap_content"
+        android:scaleX="2.0"
+        android:scaleY="2.0" />
+
+
+</LinearLayout>
