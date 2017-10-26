@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_classificacao"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rodrigo01.rodadabrasileiro.Classificacao">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#A9DFA9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Classificação"
+            android:textColor="#005500"
+            android:textSize="25sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginStart="13dp" />
+
+        <Button
+            android:id="@+id/botaoOrdem"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="end"
+            android:background="@drawable/downarrow"
+            android:onClick="mudarOrdem"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="18dp"
+            android:layout_marginEnd="18dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/relativeLayout1"
+        android:paddingTop="5dp"
+        android:paddingBottom="6dp"
+        >
+        <ListView
+            android:id="@+id/lista_clubes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="5sp">
+        </ListView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
